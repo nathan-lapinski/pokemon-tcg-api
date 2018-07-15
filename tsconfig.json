@@ -1,0 +1,22 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "outDir": "./build/pokemon-tcg-api/dist/",
+        "sourceMap": true,
+        "allowJs": true,
+        "allowSyntheticDefaultImports": true
+    },
+    "files": [
+        "./node_modules/@types/node/index.d.ts"
+    ],
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.js",
+        "package.json"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
