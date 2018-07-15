@@ -24,7 +24,7 @@
     "@types/node": "^8.0.20",
     "body-parser": "^1.17.2",
     "express": "^4.15.4",
-    "express-openapi": "1.0.0",
+    "express-openapi": "^1.0.0",
     "tslint": "^5.6.0"
   },
   "devDependencies": {

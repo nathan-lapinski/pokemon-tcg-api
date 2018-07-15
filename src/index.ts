@@ -27,15 +27,9 @@ app.use(allowCrossDomain);
 app.use(bodyParser.json());
 
 openapi.initialize({
-    'apiDoc': apiDoc,
-    'app': app,
-    'paths': settings.api.paths,
-    'errorMiddleware': (error, req, res, next) => {
-        console.log('Add some error middleware!!');
-
-        res.status(500);
-        res.json({msg: 'an error has occured'});
-    }
+    apiDoc: apiDoc,
+    app: app,
+    paths: settings.api.paths
 });
 
 app.listen(settings.api.port);
