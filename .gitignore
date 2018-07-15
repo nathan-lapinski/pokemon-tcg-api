@@ -18,7 +18,6 @@ build/pokemon-tcg-api/dist
 .repo
 .settings/
 *.sublime-workspace
-spotx-web-dfp-api.iml
 
 # IDE - VSCode
 .vscode/*

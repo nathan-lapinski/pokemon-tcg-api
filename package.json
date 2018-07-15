@@ -6,7 +6,6 @@
   "scripts": {
     "build": "rm -rf build/pokemon-tcg-api/dist/ && node_modules/.bin/tsc && cp package.json build/pokemon-tcg-api/dist/package.json",
     "start": "pushd build/pokemon-tcg-api/dist/ && node index.js && popd",
-    "tslint": "./node_modules/.bin/tslint -c tslint.json './ts/spotx/**/*.ts'",
     "test": "pushd build/pokemon-tcg-api/dist/ && ENVIRON=TEST istanbul cover _mocha --reporter spec 'test/**/*.test.js' && popd"
   },
   "repository": {
@@ -25,9 +24,8 @@
     "@types/node": "^8.0.20",
     "body-parser": "^1.17.2",
     "express": "^4.15.4",
-    "express-openapi": "^1.0.0",
-    "tslint": "^5.6.0",
-    "tslint-config-spotx": "0.0.4"
+    "express-openapi": "1.0.0",
+    "tslint": "^5.6.0"
   },
   "devDependencies": {
     "@types/body-parser": "^1.16.4",
